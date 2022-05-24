@@ -8,6 +8,7 @@ import buttonStyles from './components/Buttons'
 import exampleStyles from './components/Example'
 import exampleTextStyles from './components/ExampleText'
 import textInputStyles from './components/TextInputs'
+import orderSectionStyles from './components/OrderSection'
 /**
  *
  * @param Theme can be spread like {Colors, NavigationColors, Gutters, Layout, Common, ...args}
@@ -20,6 +21,7 @@ export default function ({ Colors, ...args }) {
     example: exampleStyles({ Colors, ...args }),
     textInput: textInputStyles({ Colors, ...args }),
     exampleText: exampleTextStyles({ Colors, ...args }),
+    orderSection: orderSectionStyles(),
     ...StyleSheet.create({
       backgroundPrimary: {
         backgroundColor: Colors.primary,
