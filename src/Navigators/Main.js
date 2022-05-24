@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { ExampleContainer } from '@/Containers'
-import MyContainer from '@/Containers/MyContainer'
+import Orders from '@/Containers/Orders'
 
 const Tab = createBottomTabNavigator()
 
@@ -18,8 +18,8 @@ const MainNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="My Container"
-        component={MyContainer}
+        name="Porosite"
+        component={Orders}
         options={{
           tabBarIconStyle: { display: 'none' },
           tabBarLabelPosition: 'beside-icon',
