@@ -68,6 +68,38 @@ const DATA = [
     },
     completed: true,
   },
+  {
+    _id: 4,
+    sum: 4400,
+    products: [
+      { _id: 1, quantity: 1 },
+      { _id: 2, quantity: 2 },
+      { _id: 3, quantity: 3 },
+      { _id: 4, quantity: 4 },
+    ],
+    shop: {
+      _id: 4,
+      imageUrl:
+        'https://images.unsplash.com/photo-1498654896293-37aacf113fd9?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470',
+      name: 'Conad',
+    },
+    completed: true,
+  },
+  {
+    _id: 5,
+    sum: 1000,
+    products: [
+      { _id: 1, quantity: 1 },
+      { _id: 2, quantity: 1 },
+    ],
+    shop: {
+      _id: 5,
+      imageUrl:
+        'https://images.unsplash.com/photo-1471253794676-0f039a6aae9d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470',
+      name: 'Papirun',
+    },
+    completed: true,
+  },
 ]
 const Orders = () => {
   return (
