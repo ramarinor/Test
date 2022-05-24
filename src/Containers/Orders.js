@@ -1,6 +1,6 @@
 import OrderSection from '@/Components/OrderSection'
 import React from 'react'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 const DATA = [
   {
     _id: 1,

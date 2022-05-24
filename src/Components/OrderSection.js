@@ -1,6 +1,6 @@
 import { useTheme } from '@/Hooks'
 import React from 'react'
-import { View, Text, ScrollView, FlatList } from 'react-native'
+import { View, Text, FlatList } from 'react-native'
 import OrderCard from './OrderCard'
 const OrderSection = ({ title, data }) => {
   const { Fonts, Common } = useTheme()
