@@ -21,7 +21,7 @@ export default function ({ Colors, ...args }) {
     example: exampleStyles({ Colors, ...args }),
     textInput: textInputStyles({ Colors, ...args }),
     exampleText: exampleTextStyles({ Colors, ...args }),
-    orderSection: orderSectionStyles(),
+    orderSection: orderSectionStyles({ ...args }),
     ...StyleSheet.create({
       backgroundPrimary: {
         backgroundColor: Colors.primary,

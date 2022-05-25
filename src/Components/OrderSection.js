@@ -5,8 +5,8 @@ import OrderCard from './OrderCard'
 const OrderSection = ({ title, data }) => {
   const { Fonts, Common } = useTheme()
   return (
-    <View style={Common.orderSection.base}>
-      <Text style={[Fonts.titleSmall]}>{title}</Text>
+    <View style={Common.orderSection.container}>
+      <Text style={[Fonts.titleSmall, Common.orderSection.title]}>{title}</Text>
 
       <FlatList
         data={data}

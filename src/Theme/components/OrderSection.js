@@ -1,10 +1,13 @@
 import { StyleSheet } from 'react-native'
 
-export default function () {
-  const base = {
-    height: '50%',
-  }
+export default function ({ Gutters }) {
   return StyleSheet.create({
-    base,
+    container: {
+      height: '50%',
+      ...Gutters.largeHMargin,
+    },
+    title: {
+      ...Gutters.regularVMargin,
+    },
   })
 }
