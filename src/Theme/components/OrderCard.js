@@ -3,9 +3,9 @@ import { StyleSheet } from 'react-native'
 export default function ({ Colors, Gutters, FontSize }) {
   return StyleSheet.create({
     container: {
-      height: 100,
-      ...Gutters.smallVMargin,
-      ...Gutters.largeHPadding,
+      height: 102,
+      marginVertical: 16,
+      paddingHorizontal: 32,
     },
     imageBackground: {
       flex: 4,
@@ -14,13 +14,11 @@ export default function ({ Colors, Gutters, FontSize }) {
       overflow: 'hidden',
       borderTopLeftRadius: 10,
       borderTopRightRadius: 10,
-      borderWidth: 2,
       borderBottomWidth: 0,
-      borderColor: Colors.grey,
     },
     imageText: {
       color: Colors.white,
-      fontSize: FontSize.regular,
+      fontSize: 24,
       fontWeight: 'bold',
     },
     details: {
@@ -41,7 +39,11 @@ export default function ({ Colors, Gutters, FontSize }) {
       alignItems: 'center',
       ...Gutters.smallHPadding,
     },
+    qunatity: {
+      fontSize: 14,
+    },
     price: {
+      fontSize: 14,
       fontWeight: 'bold',
     },
     button: {
@@ -51,6 +53,7 @@ export default function ({ Colors, Gutters, FontSize }) {
     },
     buttonText: {
       color: Colors.white,
+      fontSize: 14,
     },
   })
 }

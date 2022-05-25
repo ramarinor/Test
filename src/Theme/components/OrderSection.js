@@ -6,10 +6,10 @@ export default function ({ Gutters, FontSize }) {
       height: '50%',
     },
     title: {
-      ...Gutters.regularVMargin,
-      ...Gutters.largeHPadding,
-      fontSize: FontSize.large,
+      fontSize: 24,
       fontWeight: 'bold',
+      paddingHorizontal: 32,
+      marginVertical: 20,
     },
   })
 }

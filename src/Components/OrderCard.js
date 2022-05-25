@@ -16,7 +16,9 @@ const OrderCard = ({ order }) => {
         <Text style={Common.orderCard.imageText}>{order.shop.name}</Text>
       </ImageBackground>
       <View style={Common.orderCard.details}>
-        <Text>{getQuantity(order)} produkte</Text>
+        <Text style={Common.orderCard.quantity}>
+          {getQuantity(order)} produkte
+        </Text>
         <Text style={Common.orderCard.price}>{order.sum} Lekë</Text>
         <TouchableOpacity style={Common.orderCard.button}>
           <Text style={Common.orderCard.buttonText}>
