@@ -9,6 +9,7 @@ import exampleStyles from './components/Example'
 import exampleTextStyles from './components/ExampleText'
 import textInputStyles from './components/TextInputs'
 import orderSectionStyles from './components/OrderSection'
+import orderCardStyles from './components/OrderCard'
 /**
  *
  * @param Theme can be spread like {Colors, NavigationColors, Gutters, Layout, Common, ...args}
@@ -22,7 +23,11 @@ export default function ({ Colors, ...args }) {
     textInput: textInputStyles({ Colors, ...args }),
     exampleText: exampleTextStyles({ Colors, ...args }),
     orderSection: orderSectionStyles({ ...args }),
+    orderCard: orderCardStyles({ Colors, ...args }),
     ...StyleSheet.create({
+      backgroundWhite: {
+        backgroundColor: Colors.white,
+      },
       backgroundPrimary: {
         backgroundColor: Colors.primary,
       },

@@ -1,4 +1,5 @@
 import OrderSection from '@/Components/OrderSection'
+import { useTheme } from '@/Hooks'
 import React from 'react'
 import { View } from 'react-native'
 const DATA = [
@@ -86,8 +87,9 @@ const DATA = [
   },
 ]
 const Orders = () => {
+  const { Common } = useTheme()
   return (
-    <View>
+    <View style={Common.backgroundWhite}>
       <OrderSection
         title={'Aktuale'}
         data={DATA.filter(order => !order.completed)}

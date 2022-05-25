@@ -10,16 +10,16 @@ const MainNavigator = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen
-        name="Home"
-        component={ExampleContainer}
+        name="Porosite"
+        component={Orders}
         options={{
           tabBarIconStyle: { display: 'none' },
           tabBarLabelPosition: 'beside-icon',
         }}
       />
       <Tab.Screen
-        name="Porosite"
-        component={Orders}
+        name="Home"
+        component={ExampleContainer}
         options={{
           tabBarIconStyle: { display: 'none' },
           tabBarLabelPosition: 'beside-icon',

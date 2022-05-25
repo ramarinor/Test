@@ -20,6 +20,7 @@ export const Colors = {
   red: 'red',
   blue: 'blue',
   black: 'black',
+  grey: '#707070',
 }
 
 export const NavigationColors = {
@@ -32,7 +33,7 @@ export const NavigationColors = {
 export const FontSize = {
   small: 16,
   regular: 20,
-  large: 40,
+  large: 25,
 }
 
 /**

@@ -1,13 +1,15 @@
 import { StyleSheet } from 'react-native'
 
-export default function ({ Gutters }) {
+export default function ({ Gutters, FontSize }) {
   return StyleSheet.create({
     container: {
       height: '50%',
-      ...Gutters.largeHMargin,
     },
     title: {
       ...Gutters.regularVMargin,
+      ...Gutters.largeHPadding,
+      fontSize: FontSize.large,
+      fontWeight: 'bold',
     },
   })
 }
