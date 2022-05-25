@@ -36,6 +36,21 @@ export default function ({ Colors, Gutters, FontSize }) {
         width: 1,
       },
       elevation: 5,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      ...Gutters.smallHPadding,
+    },
+    price: {
+      fontWeight: 'bold',
+    },
+    button: {
+      backgroundColor: Colors.primary,
+      ...Gutters.largeHPadding,
+      borderRadius: 10,
+    },
+    buttonText: {
+      color: Colors.white,
     },
   })
 }
